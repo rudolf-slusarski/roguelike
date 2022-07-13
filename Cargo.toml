@@ -1,0 +1,10 @@
+[package]
+author = "rudolf"
+edition = "2021"
+name = "roguelike"
+version = "0.1.0"
+
+[dependencies]
+rltk = "0.8.1"
+specs = "0.17"
+specs-derive = "0.4.1"
