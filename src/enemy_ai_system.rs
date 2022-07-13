@@ -16,7 +16,7 @@ impl<'a> System<'a> for EnemyAI {
     fn run(&mut self, data: Self::SystemData) {
         let (player_pos, viewshed, enemy, name) = data;
 
-        for (viewshed, enemy, name) in (&viewshed, &enemy, &name).join() {
+        for (viewshed, _enemy, name) in (&viewshed, &enemy, &name).join() {
             if viewshed.visible_tiles.contains(&*player_pos) {
                 println!("{} thinks", name.name);
             }
